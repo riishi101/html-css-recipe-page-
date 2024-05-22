@@ -1,0 +1,163 @@
+:root {
+  /* Neutral */
+  --whiteClr: hsl(0, 0%, 100%);
+  --roseWhtClr: hsl(330, 100%, 98%);
+  --eggshellClr: hsl(30, 54%, 90%);
+  --lgtGryClr: hsl(30, 18%, 87%);
+  --wengeBrnClr: hsl(30, 10%, 34%);
+  --darkCharClr: hsl(24, 5%, 18%);
+
+  /* Primary */
+  --nutmegClr: hsl(14, 45%, 36%);
+  --drkRasyClr: hsl(332, 51%, 32%);
+
+  /* fonts */
+  --outFnts: "Outfit", sans-serif;
+  --yngFnts: "Young Serif", serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--eggshellClr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: 0;
+  font-size: 13px;
+  font-family: var(--outFnts);
+  color: var(--wengeBrnClr);
+  line-height: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--darkCharClr);
+  font-family: var(--yngFnts);
+}
+
+h4 {
+  color: var(--drkRasyClr);
+}
+
+h3 {
+  color: var(--nutmegClr);
+}
+
+.container {
+  background-color: #ffff;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--whiteClr);
+  width: 600px;
+  height: 70%;
+  padding: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+    padding: 0;
+    overflow: hidden;
+  }
+  h1 {
+    line-height: 1.8rem;
+  }
+  img {
+    border-radius: 0;
+  }
+
+  .content_container {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+ol {
+  padding-left: 18px;
+}
+
+.time_container {
+  background-color: var(--roseWhtClr);
+  padding: 1rem 0 1rem 1.5rem;
+  border-radius: 5px;
+  line-height: 1.8rem;
+}
+
+.time_container li {
+  padding-left: 5px;
+}
+
+.time_container li::marker {
+  color: var(--drkRasyClr);
+}
+
+.time_container h4 {
+  margin: 0;
+  font-family: var(--outFnts);
+  color: var(--drkRasyClr);
+}
+
+.ingredients_container {
+  line-height: 1.6rem;
+  border-bottom: 1px solid var(--lgtGryClr);
+  padding-bottom: 1rem;
+}
+
+.ingredients_container li {
+  padding-left: 5px;
+}
+
+.ingredients_container li::marker {
+  color: var(--nutmegClr);
+}
+
+.instructions_container {
+  border-bottom: 1px solid var(--lgtGryClr);
+}
+
+.instructions_container li {
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.instructions_container li::marker {
+  color: var(--nutmegClr);
+  font-weight: 700;
+}
+
+table {
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  padding: 0 0 5px 1.5rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tbody > tr {
+  border-bottom: 1px solid var(--lgtGryClr);
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+td {
+  font-weight: bolder;
+  color: var(--nutmegClr);
+}
+
+span {
+  font-weight: bold;
+}
